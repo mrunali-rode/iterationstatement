@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Que 1.Find the number of digits</h4>
+    <pre>
+        Ans:
+           const Find_Digits = (N) => 
+            {
+               let count=0;
+              while(N!==0)
+              {
+   
+                count++;
+                N=Math.floor(N/10);
+   
+              }
+              return count;
+            };
+    </pre>
+    <h4>Que 2.Find the Fives</h4>
+    <pre>
+        Ans: const Find_Five = (N) => 
+            {
+               let count=0;
+            	 while(N>0)
+            	 {
+            	   let r= N % 10;
+            	   if( r == 5){
+            	   count++;
+            	   }
+            	   N=parseInt(N/10);
+	   
+            	 }
+            	 return count;
+            };
+
+    </pre>
+    <h4>Que 3.Find Sum
+      You are given an integer N,and your task is to find the sum of all the even integers starting from 1 upto N(N inclusive).</h4>
+      <pre>
+        Ans: 
+            const findSum = (n) => {
+              let sum=0;
+                for(let i=1;i<=n;i++)
+                  
+                  if(i%2==0)
+                  {
+                   sum=sum+i;
+                  }
+                }
+                return sum;
+            };
+      </pre>
+      <h4>Que 4.Find the sum of the digits of a given number.</h4>
+      <pre>
+        Ans:                    
+               const Number_Sum = (N) => 
+               {
+                  let sum=0, V;
+                  while(N!=0)
+                {
+                   V=N%10;
+                  sum+=V;
+                  N=parseInt(N/10);
+                }
+                return sum;
+ 
+               };
+
+
+      </pre>
+      <h4>Que 5.Print the Odds.</h4>
+      <pre>Ans: const Print_Odd = (N) => 
+                    {
+                      console.log(2);
+                    	 for(let i=2;i<=N;i++)
+                    	 {
+                    	   if(i%2==1)
+                    	   console.log(i);
+                    	 }
+                    };                    
+      </pre>
+      <h4>Que 6.Print the Pattern.</h4>
+      <pre>Ans: 
+             const Print_pattern = (N) => 
+             {
+               let str="";
+               for(let i=1;i<=N;i++)
+               {
+                 for(let j=1;j<=i;j++)
+               {
+                str+="*";
+               }
+                str+="\n";
+               }
+               console.log(str);
+  
+             };
+            </pre>
+        <h4>Que 7.Check whether a Number is a prime or not.</h4>
+        <pre>
+            Ans: const Prime_Check = (N) => 
+                      {
+                         let count=0;
+	                       for(let i=1;i<=N;i++)
+	                       {
+                      	   if(N%i==0)
+                      	   {
+                      	     count++;
+                      	   }
+                      	 }
+                      	 if(count==2)
+                      	 {
+                      	   return("YES");
+                      	 }
+                      	 else
+                      	 {
+                      	   return("NO");
+                      	 }
+	
+                      };
+        </pre>
+        <h4>Que 8.Print Numbers You are given an integer N,and your task is to print all the integers starting from 1 till N (N inclusive).</h4>
+        <pre>
+            Ans:const printNumbers = (n) => {
+                for(let i=1;i<=n;i++)
+                 {
+                   console.log(i);
+                 }
+                };
+        </pre>
+        <h4>Que 9.Print the Table</h4>
+        <pre>
+            Ans:const Print_Table = (N) => 
+                {
+                	for(let i=1;i<=10;i++)
+                	{
+                	  let p=(N*i)
+                	  console.log(N + " * " +i+" = "+p);
+                	}
+                };
+        </pre>
+</body>
+</html>
